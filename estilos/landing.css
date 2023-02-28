@@ -9,13 +9,20 @@ body{
 }
 /*header*/
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
     background-color: #8D5143;
-    padding: 8px;
+    padding: 8px 15px;
     border-bottom: 2px solid #624A39;
 }
 .logo_header {
     width: 50px;
+}
+.menu{
+    display: flex;
+    gap: 15px;
 }
 /*main*/
 .topo {
@@ -53,7 +60,6 @@ main h1{
     color: #D9946C;
 }
 .comida_imagem{
-    width: 400px;
     border: 3px solid #D9946C;
     border-radius: 10px;
 }
@@ -93,7 +99,6 @@ main h1{
     color: #624A39;
 }
 .bebidas_imagem{
-    width: 400px;
     border: 3px solid #8D5143;
     border-radius: 10px;
 }
@@ -113,11 +118,51 @@ main h1{
     gap: 50px;
     padding: 10px 70px 40px 70px;
 }
-.contato{
+.infos{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: #8D5143;
     border-top: 2px solid #624A39;
     min-height: 300px;
+    padding: 30px;
+}
+.contato{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.contato h2,p{
+    margin: 10px;
+}
+.contato>p{
+    text-align: center;
+}
+.qr{
+    width: 150px;
+    margin: 10px;
+}
+button{
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    background-color: #25D366;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+footer{
+    display: flex;
+    background-color: #8D5143;
+    height: 40px;
+    border-top: 2px solid #624A39;
+    align-items: center;
+}
+footer>a{
+    margin: auto;
 }
