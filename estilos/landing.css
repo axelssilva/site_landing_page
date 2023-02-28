@@ -59,13 +59,19 @@ main h1{
 }
 .salgados{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     gap: 50px;
     padding: 0px 70px 10px 70px;
 }
+.texto{
+    display: flex;
+    max-width: 750px;
+}
 .doces{
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     gap: 50px;
@@ -91,6 +97,22 @@ main h1{
     border: 3px solid #8D5143;
     border-radius: 10px;
 }
+.cafe{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 70px 10px 70px;
+}
+.suco{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 70px 40px 70px;
+}
 .contato{
     display: flex;
     flex-direction: column;
@@ -98,18 +120,4 @@ main h1{
     background-color: #8D5143;
     border-top: 2px solid #624A39;
     min-height: 300px;
-}
-.cafe{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-    padding: 0px 70px 10px 70px;
-}
-.suco{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 50px;
-    padding: 10px 70px 40px 70px;
 }
