@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+header {
+    height: 40px;
+    background-color: #8D5143;
+    padding: 8px;
+    border-bottom: 2px solid #624A39;
+}
+.logo_header {
+    width: 50px;
+}
+/*main*/
+.topo {
+    display: flex;
+    justify-content: center;
+    background-color: #F9C4BA;
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+.logo {
+    width: 300px;
+}
+main h1{
+    margin: auto;
+    padding: 20px;
+    font-size: 2.5em;
+}
+.comidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    background-color: #8D5143;
+    border-top: 2px solid #624A39;
+    min-height: 300px;
+}
+.comidas p{
+    color: #D9946C;
+    font-size: 1.5em;
+}
+.titulo_comidas{
+    color: #D9946C;
+}
+.comida_imagem{
+    width: 400px;
+    border: 3px solid #D9946C;
+    border-radius: 10px;
+}
+.salgados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 70px 10px 70px;
+}
+.doces{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 70px 40px 70px;
+}
+.bebidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #D9946C;
+    border-top: 2px solid #624A39;
+    min-height: 300px;
+}
+.bebidas p{
+    color: #624A39;
+    font-size: 1.5em;
+}
+.titulo_bebidas{
+    color: #624A39;
+}
+.bebidas_imagem{
+    width: 400px;
+    border: 3px solid #8D5143;
+    border-radius: 10px;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8D5143;
+    border-top: 2px solid #624A39;
+    min-height: 300px;
+}
+.cafe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 70px 10px 70px;
+}
+.suco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 70px 40px 70px;
+}
