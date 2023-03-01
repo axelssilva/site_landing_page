@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --cor_mais_escura: #592C28;
+    --cor_intermediaria_e: #8C5042;
+    --cor_intermediaria_c: #D9A689;
+    --cor_mais_clara: #F2E8DF;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,9 +19,9 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    background-color: #8D5143;
+    background-color: var(--cor_intermediaria_e);
     padding: 8px 15px;
-    border-bottom: 2px solid #624A39;
+    border-bottom: 2px solid var(--cor_mais_escura);
 }
 .logo_header {
     width: 50px;
@@ -24,16 +30,20 @@ header {
     display: flex;
     gap: 15px;
 }
+.item_menu:hover{
+    color: var(--cor_intermediaria_c);
+}
 /*main*/
 .topo {
     display: flex;
     justify-content: center;
-    background-color: #F9C4BA;
+    background-color: var(--cor_intermediaria_c);
     background-image: url("../imagens/fundo.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     padding: 20px;
+    box-shadow: 1px 1px 9px 5px rgba(0, 0, 0, 0.212) inset;
 }
 .logo {
     width: 300px;
@@ -47,21 +57,19 @@ main h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: space-around;
-    background-color: #8D5143;
-    border-top: 2px solid #624A39;
-    min-height: 300px;
+    background-color: var(--cor_intermediaria_e);
+    border-top: 2px solid var(--cor_mais_escura);
 }
 .comidas p{
-    color: #D9946C;
+    color: var(--cor_intermediaria_c);
     font-size: 1.5em;
 }
 .titulo_comidas{
-    color: #D9946C;
+    color: var(--cor_intermediaria_c);
 }
 .comida_imagem{
-    border: 3px solid #D9946C;
-    border-radius: 10px;
+    border: 3px solid var(--cor_intermediaria_c);
+    border-radius: 20px;
 }
 .salgados{
     display: flex;
@@ -73,7 +81,7 @@ main h1{
 }
 .texto{
     display: flex;
-    max-width: 750px;
+    max-width: 700px; 
 }
 .doces{
     display: flex;
@@ -87,19 +95,19 @@ main h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #D9946C;
-    border-top: 2px solid #624A39;
+    background-color: var(--cor_intermediaria_c);
+    border-top: 2px solid var(--cor_mais_escura);
     min-height: 300px;
 }
 .bebidas p{
-    color: #624A39;
+    color: var(--cor_mais_escura);
     font-size: 1.5em;
 }
 .titulo_bebidas{
-    color: #624A39;
+    color: var(--cor_mais_escura);
 }
 .bebidas_imagem{
-    border: 3px solid #8D5143;
+    border: 3px solid var(--cor_intermediaria_e);
     border-radius: 10px;
 }
 .cafe{
@@ -123,8 +131,8 @@ main h1{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #8D5143;
-    border-top: 2px solid #624A39;
+    background-color: var(--cor_intermediaria_e);
+    border-top: 2px solid var(--cor_mais_escura);
     min-height: 300px;
     padding: 30px;
 }
@@ -151,16 +159,28 @@ button{
     border: 2px solid white;
     border-radius: 10px;
 }
+button:hover{
+    background-color: white;
+    border: 2px solid #25D366;
+    color: #25D366;
+    transition: 0.5s;
+}
 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor_mais_clara);
+}
+button{
     text-decoration: none;
     font-weight: bold;
     color: white;
 }
+/*footer*/
 footer{
     display: flex;
-    background-color: #8D5143;
+    background-color: var(--cor_intermediaria_e);
     height: 40px;
-    border-top: 2px solid #624A39;
+    border-top: 2px solid var(--cor_mais_escura);
     align-items: center;
 }
 footer>a{
